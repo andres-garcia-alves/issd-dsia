@@ -6,9 +6,9 @@
 
 ### Contenido
 
-- Clase 02 - Modelado de Problemas
-- Clase 04 - Búsqueda Informada & Heurística
-- Clase 08 - TensorFlow
+- Clases/Clase 02 - Modelado de Problemas
+- Clases/Clase 04 - Búsqueda Informada & Heurística
+- Clases/Clase 08 - TensorFlow
 - Proyecto Final
 &nbsp;
 
