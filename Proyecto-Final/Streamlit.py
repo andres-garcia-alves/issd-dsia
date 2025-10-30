@@ -1,3 +1,4 @@
+import os
 import pickle
 from queue import PriorityQueue
 import numpy as np
@@ -5,20 +6,15 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 import streamlit as st
-import os
 
-# Obtener el path absoluto al directorio actual (donde está Streamlit.py)
+# path & rutas absolutas del proyecto
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Rutas absolutas
 path_modelo = os.path.join(BASE_DIR, "modelo", "red_neuronal.keras")
 path_objetos = os.path.join(BASE_DIR, "modelo", "objetos.pkl")
 
 # Cargar el modelo entrenado (y objetos auxiliares)
 model = load_model(path_modelo)
 scaler, label_encoder = pickle.load(open(path_objetos, "rb"))
-#model = load_model("./modelo/red_neuronal.keras")
-#scaler, label_encoder = pickle.load(open("./modelo/objetos.pkl", "rb"))
 
 
 # Funciones del proyecto
