@@ -132,7 +132,7 @@ if generar_btn:
     # Calcular y mostrar ruta óptima del algoritmo sugerido
     path = buscar_camino(tablero, modo=alg_predicho)
     if path:
-        st.write("🗺️ Mejor ruta encontrada:")
+        st.write("🗺️ La mejor ruta encontrada:")
         mostrar_tablero(tablero, path)
     else:
         st.warning("⚠️ No se encontró camino válido en este tablero.")
